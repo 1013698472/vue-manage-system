@@ -24,13 +24,31 @@ const routes: RouteRecordRaw[] = [
                 component: () => import(/* webpackChunkName: "dashboard" */ '../views/dashboard.vue'),
             },
             {
-                path: '/table',
-                name: 'basetable',
+                path: '/userManagement',
+                name: 'userManagement',
                 meta: {
-                    title: '表格',
+                    title: '用户管理',
                     permiss: '2',
                 },
-                component: () => import(/* webpackChunkName: "table" */ '../views/table.vue'),
+                component: () => import(/* webpackChunkName: "dashboard" */ '../views/admin/user/index.vue')
+            },
+            {
+                path: '/trainManagement',
+                name: 'trainManagement',
+                meta: {
+                    title: '火车管理',
+                    permiss: '2',
+                },
+                component: () => import(/* webpackChunkName: "dashboard" */ '../views/admin/train/index.vue')
+            },
+            {
+                path: '/orderManagement',
+                name: 'orderManagement',
+                meta: {
+                    title: '订单管理',
+                    permiss: '2',
+                },
+                component: () => import(/* webpackChunkName: "dashboard" */ '../views/admin/order/index.vue')
             },
             {
                 path: '/charts',

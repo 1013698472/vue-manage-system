@@ -64,24 +64,24 @@ const items = [
     },
     {
       icon: 'Calendar',
-      index: '/user',
+      index: '/userManagement',
       title: '用户管理',
       permiss: '1'
     },
     {
       icon: 'Calendar',
-      index: '/user',
+      index: '/trainManagement',
       title: '火车管理',
       permiss: '1'
     },
     {
       icon: 'Calendar',
-      index: '/user',
+      index: '/',
       title: '车票管理',
       permiss: '1',
       subs: [
         {
-          index: '/list',
+          index: '/orderManagement',
           title: '订单管理',
           permiss: '2',
         },
@@ -103,11 +103,6 @@ const items = [
         title: '表格相关',
         permiss: '2',
         subs: [
-            {
-                index: '/table',
-                title: '常用表格',
-                permiss: '2',
-            },
             {
                 index: '/import',
                 title: '导入Excel',

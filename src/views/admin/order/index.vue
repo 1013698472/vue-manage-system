@@ -8,11 +8,11 @@
       </div>
       <el-table :data="tableData" border class="table" ref="multipleTable" header-cell-class-name="table-header">
         <el-table-column prop="id" label="ID" width="55" align="center"></el-table-column>
-        <el-table-column prop="name" label="手机号" align="center"></el-table-column>
-        <el-table-column label="姓名" align="center">
+        <el-table-column prop="name" label="用户名" align="center"></el-table-column>
+        <el-table-column label="账户余额" align="center">
           <template #default="scope">￥{{ scope.row.money }}</template>
         </el-table-column>
-        <el-table-column label="身份证" align="center">
+        <el-table-column label="头像(查看大图)" align="center">
           <template #default="scope">
             <el-image
                 class="table-td-thumb"
